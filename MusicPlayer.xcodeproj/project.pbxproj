@@ -43,6 +43,7 @@
 		AA7283B52911E28F0035E63D /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9.wav; sourceTree = "<group>"; };
 		AA7283B62911E28F0035E63D /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
 		AA7283B72911E28F0035E63D /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
+		AA7283C22911E7910035E63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		AA7283892911D6080035E63D /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				AA7283C22911E7910035E63D /* Info.plist */,
 				AA7283A32911DF860035E63D /* MVVM */,
 				AA7283982911D7660035E63D /* Sonidos */,
 				AA72838A2911D6080035E63D /* MusicPlayerApp.swift */,
@@ -334,6 +336,7 @@
 				DEVELOPMENT_TEAM = 9TPTHP2V2G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,6 +366,7 @@
 				DEVELOPMENT_TEAM = 9TPTHP2V2G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

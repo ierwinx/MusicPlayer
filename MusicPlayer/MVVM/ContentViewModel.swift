@@ -11,9 +11,31 @@ class ContentViewModel: ObservableObject {
     ]
     private var player: AVAudioPlayer?
     
-    func playAudio(url: URL) {
+    //Permite background adicional al capability de la app de background
+    init() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func initAudio(url: URL) {
         player = try? AVAudioPlayer(contentsOf: url)
         player?.prepareToPlay()
+        playAudio()
+    }
+    
+    func stopAudio() {
+        player?.stop()
+    }
+    
+    func pauseAudio() {
+        player?.pause()
+    }
+    
+    func playAudio() {
         player?.play()
     }
     

@@ -9,12 +9,35 @@ struct ContentView: View {
             List {
                 ForEach(contentViewModel.arrMusic, id: \.id) { sonido in
                     Button("Play sound \(sonido.name)") {
-                        contentViewModel.playAudio(url: sonido.getURL())
+                        contentViewModel.initAudio(url: sonido.getURL())
+                    }
+                }
+            }
+            .toolbar {
+                HStack {
+                    Button {
+                        contentViewModel.pauseAudio()
+                    } label: {
+                        Image(systemName: "pause.fill")
+                            .foregroundColor(.red)
+                    }
+                    Button {
+                        contentViewModel.playAudio()
+                    } label: {
+                        Image(systemName: "play.fill")
+                            .foregroundColor(.red)
+                    }
+                    Button {
+                        contentViewModel.stopAudio()
+                    } label: {
+                        Image(systemName: "stop.fill")
+                            .foregroundColor(.red)
                     }
                 }
             }
             .navigationBarTitle("Musica")
         }
+        
     }
 }
 
